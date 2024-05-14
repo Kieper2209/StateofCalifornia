@@ -13,7 +13,20 @@ body, html {
   background-color: #003262;
 }
 
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#button-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 #button {
+  position: absolute;
   text-decoration: none;
   border-radius: 5px;
   background-color: var(--background-color);
@@ -76,6 +89,7 @@ body, html {
   /* BANNER */
 
 #banner {
+  position: relative;
   display:flex;
   flex-wrap: wrap;
   align-items: center;
@@ -119,6 +133,7 @@ body, html {
 }
 
 #banner .image {
+  position: absolute;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -243,6 +258,7 @@ body, html {
 .articles ul li {
   list-style: none;
   margin-top: 40px;
+  padding-bottom: 20px;
 }
 
   /* Places to Visit */
@@ -310,7 +326,6 @@ body, html {
 }
 
 #santacruz {
-  background-image: url(santa\ cruz\ beach\ boardwalk.png);
   background-image: url(../assets/santa\ cruz\ beach\ boardwalk.png);
 }
 
@@ -328,9 +343,10 @@ body, html {
 
 /* FOOTER */
 .footer {
-  background-color: #003262;
-  color: bisque;
-  padding: 40px;
+  background: linear-gradient(to bottom, #b7123300, rgba(122,136,99,1));
+  color: var(--font-color);
+  text-shadow: 0 0 3px black;
+  padding: 10px;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -342,7 +358,11 @@ body, html {
 }
 
 .footer h2 {
-  font-size: 45px;
+  font-size: 35px;
+}
+
+.footer p {
+  font-size: 20px;
 }
 
 .footer ul, .social-media ul {
@@ -355,12 +375,31 @@ body, html {
   margin-bottom: 20px;
 }
 
+.button {
+  padding: 10px 20px;
+  border: 2px solid #BD8A5E;
+  border-radius: 10px;
+  background: transparent;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: var(--top-background);
+  color: goldenrod;
+}
+
 .footer table {
   width: 100%;
   text-align: left;
   border-spacing: 0;
   border-collapse: collapse;
-  font-size: 1.5em;
+  font-size: 20px;
   font-family: var(--font-family);
 }
 
@@ -379,7 +418,8 @@ body, html {
 }
 
 .footer a:hover {
-  color: var(--font-color);
+  color: goldenrod;
+  background-color: var(--border-color);
 }
 
 .footer caption {
@@ -430,4 +470,4 @@ body, html {
 
 .social-media li a:hover img {
   transform: scale(1.1);
-}  
+}
