@@ -194,7 +194,7 @@ p {
   background: linear-gradient(to bottom, #b7123300, rgba(122,136,99,1));
   color: var(--font-color);
   text-shadow: 0 0 3px black;
-  padding: 40px;
+  padding: 10px;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -206,7 +206,11 @@ p {
 }
 
 .footer h2 {
-  font-size: 45px;
+  font-size: 35px;
+}
+
+.footer p {
+  font-size: 20px;
 }
 
 .footer ul, .social-media ul {
@@ -243,7 +247,7 @@ p {
   text-align: left;
   border-spacing: 0;
   border-collapse: collapse;
-  font-size: 1.5em;
+  font-size: 20px;
   font-family: var(--font-family);
 }
 
