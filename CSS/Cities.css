@@ -1,0 +1,474 @@
+:root {
+  --font-color: #FDB514;
+  --text-shadow: 0, 0, 3px, rgb(71, 71, 71);
+  --background-color: #003262;
+  --alt-background-color: #4d80af;
+  --header-color: lightblue;
+  --button-color: rgb(167, 167, 167);
+  --border-color: rgb(122, 136, 99)
+}
+  
+body, html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #003262;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#button-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#button {
+  position: absolute;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+#button:hover {
+  background-color: var(--font-color);
+  text-shadow: var(--text-shadow);
+  color: black;
+}
+  
+.city div p {
+  font-size: 30px;
+  border-radius: 2px;
+  padding: 10px;
+}
+  
+  /* navigation bar */
+.navbar {
+  background-color: #003262;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+  
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+}
+  
+.menu ul li {
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 24px;
+}
+  
+.menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: bisque;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+  
+.menu ul li a:hover {
+  transform: scale(1.5);
+  color: goldenrod;
+}
+
+  /* BANNER */
+
+#banner {
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+  padding: 4em 2em;
+  border-bottom: 5px solid var(--font-color);
+  background-color: var(--alt-background-color);
+}
+
+#banner .content {
+  flex: 1;
+  padding: 2em;
+}
+
+#banner header h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+#banner header p {
+  font-size: 1.8em;
+  color: var(--font-color);
+  margin-bottom: 1.5em;
+  text-shadow: 0 0 10px var(--font-color);
+}
+
+#banner p {
+  margin-bottom: 2em;
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+
+#banner .more {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#banner .more li {
+  display: inline-block;
+}
+
+#banner .image {
+  position: absolute;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+#banner .image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+#beachgif {
+  background-image: url(santa\ cruz\ beach\ gif.gif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(29, 29, 29);
+  overflow: hidden;
+  text-decoration: none;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+/* MAIN CONTENT/ CITY DETAILS */
+#content {
+  border-radius: 20px;
+  padding: 4em 2em;
+  margin-top: 40px;
+  border-bottom: 5px solid var(--font-color);
+  background-color: var(--alt-background-color);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.main h1 {
+  font-size: 2.5em;
+}
+
+.main p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+#minor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.small {
+  flex: 1;
+  min-width: 45%;
+  max-width: 48%;
+}
+
+.small h3, .normal h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.small p, .normal p {
+  margin-top: 0;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+/* FACTS */
+
+#facts {
+  border-radius: 20px;
+  padding: 4em 2em;
+  margin-top: 40px;
+  border-bottom: 5px solid var(--font-color);
+  background-color: var(--alt-background-color);
+}
+
+.facts-head {
+  font-size: 2em;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.articles h3 {
+  font-size: 1.5em;
+}
+
+.articles p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.articles img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.articles ul li {
+  list-style: none;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+  /* Places to Visit */
+.city-header h1 {
+  text-shadow: 1px 1px 1px goldenrod;
+  font-family: serif;
+  text-decoration: underline;
+  font-size: 90px;
+  padding: 1px;
+}
+
+.city-header p {
+  font-style: italic;
+}
+
+.city-container {
+  max-width: fit-content;
+  margin: auto;
+}
+
+.city-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.city-box {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.city-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.city-content {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  text-shadow: 5px 5px 10px black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  width: 50%;
+  z-index: 1;
+}
+
+#santacruz {
+  background-image: url(../assets/santa\ cruz\ beach\ boardwalk.png);
+}
+
+#sacramento {
+  background-image: url(../assets/sacramento\ bridge.jpg);
+}
+
+#sanjose {
+  background-image: url(../assets/sanjosepark.jpg);
+}
+
+#sanfrancisco {
+  background-image: url(../assets/sfbayarea.jpg);
+}
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(to bottom, #b7123300, rgba(122,136,99,1));
+  color: var(--font-color);
+  text-shadow: 0 0 3px black;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer h2, .footer p, .footer table {
+  margin-bottom: 20px;
+}
+
+.footer h2 {
+  font-size: 35px;
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+.footer ul, .social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer section {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 2px solid #BD8A5E;
+  border-radius: 10px;
+  background: transparent;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: var(--top-background);
+  color: goldenrod;
+}
+
+.footer table {
+  width: 100%;
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 20px;
+  font-family: var(--font-family);
+}
+
+.footer caption, .footer th {
+  font-weight: bold;
+}
+
+.footer p {
+  padding-right: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: goldenrod;
+  background-color: var(--border-color);
+}
+
+.footer caption {
+  text-decoration: none;
+  position: relative;
+  left: -100px;
+  padding-bottom: 20px;
+}
+
+.footer th, .footer td {
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.social-media {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+}
+
+.social-media ul li {
+  display: inline-block;
+}
+
+.social-media ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.social-media li img {
+  width: 90px;
+  height: 90px;
+  transition: transform 0.5s ease;
+}
+
+.social-media li a:hover img {
+  transform: scale(1.1);
+}
+
